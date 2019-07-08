@@ -1,0 +1,45 @@
+@import "_normalize";
+@import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:900&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap&subset=latin-ext');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $white;
+  background: $grey;
+}
+.form__paragraph {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+}
+.header {
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  align-items: center;
+}
+.header__article{
+    font-family: 'Oxygen', sans-serif;
+  }
+
+.font {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
+}
+.loadButton {
+  font-family: 'Oxygen', sans-serif;
+  border-radius: 16px;
+  background: white;
+  color: red;
+}
+@media (max-width: $mobile) {
+  grid-template: 1fr;
+}
