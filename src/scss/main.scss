@@ -15,22 +15,32 @@ html {
 body {
   color: $white;
   background: $grey;
-  display: flex;
-  align-items: center;
-}
-.form__paragraph {
   display: grid;
   grid-template-columns: 450px;
+  margin-left: 50px;
+}
+.main {
+  max-width: 770px;
+  margin: 0 auto;
+  }
+
+.form__paragraph {
+  
   
 }
+.form__input {
+  width: 450px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
 .header {
   font-family: 'Work Sans', sans-serif;
-  display: flex;
   align-items: center;
 }
 .header__article{
     font-family: 'Oxygen', sans-serif;
-    font-size: 20px;
+   
   }
 
 .font {
@@ -51,10 +61,9 @@ body {
 }
 .sendButton {
   font-family: 'Oxygen', sans-serif;
+  width: 50px;
+  height: 30px;
   text-decoration: none;
-  weight: 70px;
-  height: 20px;
-  border-radius: 16px;
-  background: white;
-  color: black;
+  background: none;
+  color: white;
 }
