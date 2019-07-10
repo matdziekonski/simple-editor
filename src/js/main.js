@@ -9,10 +9,13 @@ const focusInput = document.querySelector('.form__paragraph--js');
 const save = document.querySelector('.saveButton--js');
 const load = document.querySelector('.loadButton--js');
 
-save.addEventListener('click', focusInput.value = localStorage.getItem('focuInput'));
-load.addEventListener('click', );
-
+//nie wiem czy ta funkcja powinna być przed czy po buttonach
 
 focusInput.addEventListener('keyup', (e) => {
     localStorage.setItem('focusInput', e.target.value)
 })
+
+save.addEventListener('click', focusInput.value = localStorage.setItem('focuInput'));
+load.addEventListener('click', focusInput.value = localStorage.getItem('focusInput') );
+
+
