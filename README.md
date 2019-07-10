@@ -1,9 +1,8 @@
-# wtf-gulp-starter
+# simple contact form for wedding photographer/prosty formularz kontaktowy dla fotografa ślubnego
 
-`npm install -g gulp-cli`
+`wpisz swoje dane kontaktowe`
 
-`npm install`
+`..`
 
-`gulp`
+`..`
 
-To publish your page using github pages use `npm run deploy`
