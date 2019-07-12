@@ -11,18 +11,24 @@ const load = document.querySelector('.loadButton--js');
 
 //nie wiem czy ta funkcja powinna być przed czy po buttonach
 
-/*focusInput.addEventListener('keyup', (e) => {
+focusInput.addEventListener('input', (e) => {
     localStorage.setItem('focusInput', e.target.value)
 })
 
-save.addEventListener('click', focusInput.value = localStorage.setItem('focuInput'));
-load.addEventListener('click', focusInput.value = localStorage.getItem('focusInput') );
-*/
-save.addEventListener('click', () => {
-    localStorage.setItem('input', inputForm.value);
+save.addEventListener('click', (e) => {localStorage.setItem('focusInput', e.target.value)});
+load.addEventListener('click', (e) => {localStorage.getItem('focusInput', e.target.value)});
+
+
+
+
+
+/*
+load.addEventListener('click', (e) => {
+    focusInput.value = localStorage.getItem('input');
+  });
+save.addEventListener('click', (e) => {
+    localStorage.setItem('input', focusInput.value);
   });
   
-  load.addEventListener('click', () => {
-    inputForm.value = localStorage.getItem('input');
-  });
+  
 

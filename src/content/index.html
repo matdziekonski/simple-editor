@@ -12,34 +12,39 @@
     <div class="formula"></div>
     <main>
   <h1 class="header">formularz kontaktowy</h1>
-  <article class="header__article">Jeżeli jesteście ciekawi szczegółów oferty i wpsółracy zapraszam do wypełnienia formularza kontaktowego. Odpoweim najszybciej jak to będzie możliwe.
+  <article class="header__article">Jeżeli jesteście ciekawi szczegółów oferty i wpsółracy zapraszam do wypełnienia formularza kontaktowego. Odpowiem najszybciej jak to będzie możliwe.
   </article>
   
   <form class="form">
+    <div class="grid">
     <p class="form__paragraph form__paragraph--js">
         <label class="font" for="name">Imię i Nazwisko</label></br>
         <input class="form__input" type="text" name="name" placeholder="Imię i Nazwisko" id="name">
-    </p>
-    <p class="form__paragraph form__paragraph--js">
-        <label class="font" for="date">Data ślubu</label></br>
-        <input class="form__input" type="date" name="date" placeholder="data" id="date">
     </p>
     <p class="form__paragraph form__paragraph--js">
         <label class="font" for="phone">Nr telefon</label></br>
         <input class="form__input" type="number" name="phone" placeholder="telefon" id="phone">
     </p>
     <p class="form__paragraph form__paragraph--js">
-        <label class="font" for="mail">Adres e-mail</label></br>
-        <input class="form__input" type="email" name="mail" placeholder="email" id="mail">
-    </p>
-    <p class="form__paragraph form__paragraph--js">
         <label class="font" for="city">Miejsce ceremonii</label></br>
         <input class="form__input" type="text" name="city" placeholder="adres" id="city">
     </p>
-    <p class="form__paragraph form__paragraph--js">
+  </div>
+  <div class="grid">
+      <p class="form__paragraph form__paragraph--js">
+          <label class="font" for="date">Data ślubu</label></br>
+          <input class="form__input" type="date" name="date" placeholder="data" id="date">
+      </p>
+      <p class="form__paragraph form__paragraph--js">
+        <label class="font" for="mail">Adres e-mail</label></br>
+        <input class="form__input" type="email" name="mail" placeholder="email" id="mail">
+      </p>
+    
+      <p class="form__paragraph form__paragraph--js">
         <label class="font" for="name">Nazwa miejsca przyjęcia</label></br>
         <input class="form__input" type="text" name="name" id="name">
-    </p>
+      </p>
+    </div>
     <p class="form__paragraph form__paragraph--js">
       <label class="font" for="textarea"> Wiadomość</label></br>
       <textarea class="form__input" id="textarea" name="textarea"></textarea>
